@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<h3>Exemplo usando o "table-row"</h3>
+
+<table>
+  <tr id="myRow">
+    <td>Gustavo é melhor </td>
+    <td>Gustavo sempre melhor</td>
+    <td>Gustavo o melhor </td>
+  </tr>
+</table>
+
+<p>O que eu falei é uma verdade</p>
+
+<button onclick="myFunction()">Experimente</button>
+
+<script>
+function myFunction() {
+  var row = document.getElementById("myRow");
+  row.deleteCell(0);
+}
+</script>
+
+</body>
+</html>
